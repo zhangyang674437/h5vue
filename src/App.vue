@@ -84,7 +84,7 @@ html {
   text-align: left;
   font-size: 18px;
   font-weight: 500;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .data-text {
@@ -95,6 +95,7 @@ html {
 
 .row {
   display: flex;
+  margin-bottom:20px;
 }
 
 .mr5 {

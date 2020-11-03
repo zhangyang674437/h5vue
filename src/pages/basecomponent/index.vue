@@ -38,5 +38,7 @@ export default {
 </script>
 
 <style scoped>
-
+  .level-center{
+    margin:0 auto;
+  }
 </style>
