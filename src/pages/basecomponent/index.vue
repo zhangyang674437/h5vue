@@ -9,14 +9,20 @@
     <span class="data-text mr5">禁用:</span>
     <yang-switch disabled v-model="yswitch.status3"></yang-switch>
   </div>
+  <div class="left-title">滑块({{percent}}):</div>
+  <div class="components row">
+   <yang-slider :size="300" :percent="percent" class="level-center"></yang-slider>
+  </div>
 </div>
 </template>
 
 <script>
 import yangSwitch from '@/components/yangSwitch'
+import yangSlider from '@/components/yangSlider'
 export default {
   components: {
-    yangSwitch
+    yangSwitch,
+    yangSlider
   },
   data () {
     return {
@@ -24,7 +30,8 @@ export default {
         status1: true,
         status2: false,
         status3: false
-      }
+      },
+      percent: 30
     }
   }
 }
